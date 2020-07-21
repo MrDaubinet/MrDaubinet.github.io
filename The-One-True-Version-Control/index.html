@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.1"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>The One True Version Control - Jordan Daubinet</title><meta description="In a world of web applications, collaboration and code management..."><meta property="og:type" content="blog"><meta property="og:title" content="The One True Version Control"><meta property="og:url" content="http://https//mrdaubinet.github.io/The-One-True-Version-Control/"><meta property="og:site_name" content="Jordan Daubinet"><meta property="og:description" content="In a world of web applications, collaboration and code management..."><meta property="og:locale" content="en_US"><meta property="og:image" content="http://https/img/warrior.svg"><meta property="article:published_time" content="2020-07-21T10:12:27.102Z"><meta property="article:modified_time" content="2020-07-21T10:14:52.660Z"><meta property="article:author" content="Jordan Daubinet"><meta property="article:tag" content="Version Control"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/warrior.svg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://https//mrdaubinet.github.io/The-One-True-Version-Control/"},"headline":"Jordan Daubinet","image":[],"datePublished":"2020-07-21T10:12:27.102Z","dateModified":"2020-07-21T10:14:52.660Z","author":{"@type":"Person","name":"Jordan Daubinet"},"description":"In a world of web applications, collaboration and code management..."}</script><link rel="canonical" href="http://https//mrdaubinet.github.io/The-One-True-Version-Control/"><link rel="icon" href="/img/jake-the-dog.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-155112019-1" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-155112019-1');</script><script>(function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1910946,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');</script><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><link rel="alternate" href="/atom.xml" title="Jordan Daubinet" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="Jordan Daubinet" type="application/rss+xml">
+</head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/Bmo.png" alt="Jordan Daubinet" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="thumbnail" src="/img/warrior.svg" alt="The One True Version Control"></span></div><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-21T10:12:27.102Z" title="2020-07-21T10:12:27.102Z">21-07-2020</time><span class="level-item"><a class="link-muted" href="/categories/Software-Engineering/">Software Engineering</a></span><span class="level-item">27 minutes read (About 4007 words)</span><span class="level-item" id="busuanzi_container_page_pv"><i class="far fa-eye"></i>&nbsp;&nbsp;<span id="busuanzi_value_page_pv">0</span> visits</span></div></div><h1 class="title is-3 is-size-4-mobile">The One True Version Control</h1><div class="content"><p>In the land of web applications, collaboration and code management. There exists a version control software, that is so effective in its purpose, it surpasses all its competitors. Needless to say, I’m talking about <a href="https://git-scm.com/" title="" target="">Git</a>, an essential tool for any type of software development that needs to facilitate remote development.</p>
+<p>This post is going to be targeted at any developer who hasn’t used git before (I’m looking at those dropbox devs in the corner 😞) or any, who don’t feel completely comfortable with it. I think remote development has reached a pinnacle and it’s possible that it may never come down. The Covid-19 pandemic has shown the world that many technological businesses can run almost entirely remote. As a developer, this means that an understanding of version control software becomes a must have skill. So, this post is going to be a little ⌛ but its also going get through all the ✔️ that you need to know to become a master of version control and remote development. </p>
+<p>Feel free to use the catalogue on the side if you want to skip through to a section. </p>
+<blockquote><p>Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.</p>
+<footer><strong>Scott Chacon and Ben Straub</strong><cite><a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">Pro Git book</a></cite></footer></blockquote>
+
+<p>Git gives you the ability to keep track of changes made to your code through commits. Commits provide a full history of adaptions made by any user, which can be reviewed and restored from any point in the development life time. Git also provides collaboration management through merges, pushes and pulls. These tools allow you to sync the changes you make to the code with the changes others have made and vice versa.</p>
+<h1 id="The-Basics"><a href="#The-Basics" class="headerlink" title="The Basics"></a>The Basics</h1><p>Git has a methodology of a repositories, branches and commits. A repository is used as a location to store branches, each branch is a line in the illustration below. A branch is made up of a linked-list of commits, each commit is a circle in the illustration below. Each commit is an instruction of changes made to the code since the previous commit. If you follow the commits up the branch, you can see all the changes made to the code from the beginning of its existence to the most up to date version. The repository is created with a single branch, the master branch, which has a single commit. </p>
+<br>
+<img src="/The-One-True-Version-Control/git-branches.svg" class="" title="git branches">
+<br><br>
+
+<p><em>An Example…</em><br>lets say I create a new repository, this can be seen on the illustration above with the circle and branch linked to “Me”. As development on the project continues, I might ask for your help and “You” may create a new branch. In this example, you decide that the code you implemented was terrible and you never want to see it again, so your branch never gets merged back to the master branch. However, “Your Friend” says she can help me with the problem. She’s really good at coding and solves the problem in two commits, then merges her changes back into the master branch. </p>
+<br>
+<img src="/The-One-True-Version-Control/undraw_pair_programming_njlp.svg" class="" title="people programming together">
+<br><br>
+
+<p>Collaboration with git relies on the master branch and a remote repository. Each developer has a local copy of this repository and they can create additional branches and new commits on their new branches. As a developer continues to work locally, their branches will diverge from the those stored on the remote repository. When a developer wants to resynchronize with the remote repository, they must first merge all branches they were working on locally, to there local master branch and then merge there local master branch with the one stored on the remote repository. This is usually done by pulling the commits from the remote master branch, merging them with commits on your local master branch and then pushing a new commit to the remote master branch. </p>
+<p>I’m going to take a you through a real world example  of using git, with <a href="https://github.com/" title="" target="">github</a> as the platform of our remote repository.</p>
+<h1 id="Starting-Out"><a href="#Starting-Out" class="headerlink" title="Starting Out"></a>Starting Out</h1><p>To begin working with git, you’re going to need to install it on the operating system (OS) of your choice. Instructions can be found on the official Git website <a href="https://git-scm.com/downloads" title="" target="">here</a>. Once installed, create a <a href="https://github.com/new" title="" target="">new repository</a> on github. I’m going to create a repository called “Version-Control-with-Git”, made for this blog post. </p>
+<center>
+<img src="/The-One-True-Version-Control/undraw_cloud_files_wmo.svg" class="" width="500" title="cloud repository">
+</center>
+
+<p>Right off the bat, we have two different options for linking a local repository with our <em>newly created</em> remote repository. Lets take a close look at each method. </p>
+<p><strong>1. Initialize a new local repository</strong>:<br>For this method, you need to create a local repository on your machine, add a new commit to it, then push your changes to the remote master branch. Lets break down step by step:</p>
+<ol>
+<li><p>Create a folder for the project and call it whatever you want. I went with “Version-Control-with-Git”, to keep it inline with the name of the repository.</p>
+<img src="/The-One-True-Version-Control/folder.png" class="" title="folder">
+</li>
+<li><p>Create a “README.md” as the first file added to our repository. Our README file will use a format called Markdown, which is associated with the file extension “.md”. Markdown files are written in a simple html-like structure, specifically created for easy documentation. To get a more in-depth understanding of markdown, check the <a href="https://guides.github.com/features/mastering-markdown/" title="" target="">Github Guides</a>. To make this step easy, </p>
+<ul>
+<li>We start by creating a new .txt file called README.txt. </li>
+<li>We write in “This is my new Repository”.</li>
+</ul>
+<img src="/The-One-True-Version-Control/readme.png" class="" title="README.txt">
+
+<ul>
+<li>Then we rename the file as “README.md”, to save it with the .md extension.</li>
+</ul>
+
+</li>
+<li><p>Open your windows command console and navigate to the folder you created:</p>
+<article class="message is-dark">
+ <div class="message-body">
+   cd C:\Blogs\repositories\Version-Control-with-Git
+ </div>
+</article>
+
+<p>then type the following</p>
+<article class="message is-dark">
+ <div class="message-body">
+   git init <br>
+   git add README.md <br>
+   git commit -m "first commit" <br>
+   git remote add origin https://github.com/MrDaubinet/Version-Control-with-Git.git <br>
+   git push -u origin master
+ </div>
+</article>
+
+<p>We’re going to visit each of these git commands in detail a little later in this post. But to briefly explain whats happening here, we first initialize an empty repository and add the readme file we created earlier. <em>(You have to specify the files you want to add before you can commit them)</em>. We commit the change of adding the readme file, then we link a new remote repository, calling it origin with the url to the repository we created on github. Lastly, we push the commit we made, to the master branch of the remote (origin) repository.</p>
+<p>Got it? Good! 💣 </p>
+<article class="message is-warning">
+ <div class="message-body">
+   Just remember to change <i>MrDaubinet</i> and <i>Version-Control-with-Git</i> to your github username and the repository you created for the project.
+ </div>
+</article>
+
+<p>If you did all the steps correctly, you will see that your online repository has been updated and it now includes the readme file.</p>
+<img src="/The-One-True-Version-Control/init-git.png" class="" title="README.txt">
+
+</li>
+</ol>
+<p><strong>2. Clone the repository</strong> :<br>Instead of initializing a local repository, we can clone the repository directly from git. Make sure you tick “initialize this repository with a README” when creating the repository, in order to create a repository that can be cloned, it needs to have some content in it to copy. </p>
+<img src="/The-One-True-Version-Control/clone.png" class="" title="clone repository tick box">
+
+<p>Click the green clone button and copy the url</p>
+  <img src="/The-One-True-Version-Control/clone(link).png" class="" title="clone repository url">
+
+<p>Navigate to the location where you want to local repository to be stored, open your windows command console and type the following:</p>
+  <article class="message is-dark">
+    <div class="message-body">
+      git clone https://github.com/MrDaubinet/Version-Control-with-Git.git
+    </div>
+  </article>
+
+  <article class="message is-warning">
+    <div class="message-body">
+      Remember to change <i>MrDaubinet</i> and <i>Version-Control-with-Git</i> to your github username and the repository you created for the project.
+    </div>
+  </article>
+
+<p>  If you did everything correctly, you will see that your local repository has been created</p>
+  <img src="/The-One-True-Version-Control/folder-clone.png" class="" title="folder">
+
+<p>  and it now includes the readme file that are on the repository.</p>
+  <img src="/The-One-True-Version-Control/folder-clone-contents.png" class="" title="folder">
+
+<p>  And thats the basics done.</p>
+<article class="message is-info">
+  <div class="message-body">
+    <b>Congratulations!</b> <br> 
+    You now know how to create a repository on github and link to it for local development. Lets take a closer look at some of the commands that you will use to synchronize the code between the local and remote repositories.
+  </div>
+</article>
+
+<h1 id="Tracking-Changes"><a href="#Tracking-Changes" class="headerlink" title="Tracking Changes"></a>Tracking Changes</h1><p>Lets investigate how we add new files to the repository and how we can check which files have been added and which have not. </p>
+<center>
+<img src="/The-One-True-Version-Control/undraw_add_file2.svg" class="" width="400" title="title text">
+</center>
+
+<p>Create a new file called HelloWorld.txt.</p>
+<img src="/The-One-True-Version-Control/helloworld-add-file.png" class="" title="folder">
+
+<p>Open the text file, add “hello world” to the first line and save the file. </p>
+<img src="/The-One-True-Version-Control/helloworld-add-text.png" class="" title="folder">
+
+
+<p>Open your windows command console and type the following:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git status
+  </div>
+</article>
+
+<p>git will respond with the output:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    On branch master <br>
+    Your branch is up to date with 'origin/master'. <br>
+    Untracked files:
+    &nbsp;&nbsp;(use "git add <file>..." to include in what will be committed) <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f56565">HelloWorld.txt</span> <br>
+    nothing added to commit but untracked files present (use "git add" to track)
+  </div>
+</article>
+
+<p>Git show the “HelloWorld” file we just created is <em>untracked</em>. This means that the file has been added to a folder, which is being tracked by git, but it has not been <em>tracked</em> for a git commit. Going through this line by line: </p>
+<p>line 1 tells us that we are on the <strong>master branch</strong>.<br>Line 2 tells us that we have the most recent changes that are on the <strong>remote master branch</strong>.<br>Line 3 tells us that there are untracked files.<br>Line 4 tells us how to <span style="color:#48bb78">add</span> these files to be tracked for the commit.<br>Line 5 tells us what the untracked file is and line 6 is pretty self explanatory.  </p>
+<p>To track this file for a commit, we type the following:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git add HelloWorld.txt
+  </div>
+</article>
+
+<p>If we now check the status with:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git status
+  </div>
+</article>
+
+<p>git will respond with the output: </p>
+<article class="message is-dark">
+  <div class="message-body">
+    On branch master <br>
+    Your branch is up to date with 'origin/master'. <br>
+    Changes to be committed:<br>
+    &nbsp;&nbsp;(use "git reset HEAD <file>..." to unstage) <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#48bb78">new file:   HelloWorld.txt</span> <br>
+  </div>
+</article>
+
+<p>We see that the “HelloWorld” file is now tracked and ready to be included in the next commit. </p>
+<p>Lets say you wanted to undo the file you just added, maybe you want to commit other files that have been added, but not this one. You can type in:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git reset HEAD HelloWorld.txt
+  </div>
+</article>
+
+<p>If we now check the status with:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git status
+  </div>
+</article>
+
+<p>git will respond with the output: </p>
+<article class="message is-dark">
+  <div class="message-body">
+    On branch master <br>
+    Your branch is up to date with 'origin/master'. <br>
+    Untracked files:
+    &nbsp;&nbsp;(use "git add <file>..." to include in what will be committed) <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#f56565">HelloWorld.txt</span> <br>
+    nothing added to commit but untracked files present (use "git add" to track)
+  </div>
+</article>
+
+<p>If you want to add multiple files at once, you can specify each file with the command:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git add file-name-1 file-name-2 file-name-3
+  </div>
+</article>
+
+<p>Or you can add everything that is untracked in the current folder with the command: </p>
+<article class="message is-dark">
+    <div class="message-body">
+    git add .
+    </div>
+  </article>
+
+  <!-- <img src="/The-One-True-Version-Control/undraw_add_file2.svg" class="" title="add files"> -->
+  <!-- <br> -->
+
+<article class="message is-info">
+  <div class="message-body">
+    <b>Awesome!</b> <br> 
+    You now know how to track files for a commit with the <b>git add</b> command and you can check which files are tracked and untracked with the <b>git status</b> command. 
+  </div>
+</article>
+
+<h1 id="Committing-Changes"><a href="#Committing-Changes" class="headerlink" title="Committing Changes"></a>Committing Changes</h1><p>Lets now take a look at how we commit code changes and view our logs of commits. To begin with, lets take a look at what currently resides in the git logs.</p>
+<img src="/The-One-True-Version-Control/undraw_developer_activity.svg" class="" title="git commit">
+
+<p>Type in the following command:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git log
+  </div>
+</article>
+
+<p>git will respond with the output: </p>
+<article class="message is-dark">
+  <div class="message-body">
+    <span style="color:#ecc94b">commit e9e9de444b8170087901a44e75335648f701c13b (<span style="color:#f56565">origin/master, origin/HEAD</span>)</span> <br>
+    Author: MrDaubinet <daubinet.jordan@gmail.com> <br>
+    Date:   Sun Jun 21 14:28:06 2020 +0200 <br>
+    &nbsp;&nbsp; first commit
+  </div>
+</article>
+
+<p>The git output tells us that theres is a single commit which has been made on this branch. It was made by me (my username and email) on Sunday the 21st of June at 2:28 pm. It also tells us that the commit message is “first commit”. </p>
+<p>The tricky part of this output, (<span style="color:#f56565">origin/master, origin/HEAD</span>), tells us a few things about the currently set remote repository for this commit. Firstly, origin/master indicates that the changes in this commit have been pushed to the master branch of the remote repository named “origin”. Secondly, origin/HEAD indicates that the default branch of origin, which is its master branch, is pointing to this commit. Meaning this is the (last) most up to date commit that has been pushed to the master branch on the remote repository. This commit was made for us, when we initialized and linked the local and remote repositories.</p>
+<article class="message is-warning">
+  <div class="message-body">
+    To Exit git log, you need to hit the "q" character on your keyboard. This is control method taken from the <a href="https://www.vim.org/" title="" target="">vim</a> text editor.
+  </div>
+</article>
+
+ <!-- and push these changes, so that the updates we make can be synchronize on the remote repository. -->
+
+<p>Before we try commit the files we’ve added, lets make sure that we have tracked the HelloWorld.txt file we created earlier.Type in the command: </p>
+<article class="message is-dark">
+  <div class="message-body">
+    git add HelloWorld.txt
+  </div>
+</article>
+
+<p>I’ll leave it up to you to check that the file has been tracked. Now we can can commit the file. Each commit requires a commit message, which can be added inline or interactively. Lets see how this is done.</p>
+<p>lets create a commit with an inline message by using the following command:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git commit -m "Adding Hello world text file"
+  </div>
+</article>
+
+<p>git will respond with the output: </p>
+<article class="message is-dark">
+  <div class="message-body">
+    [master 20be7fb] Adding Hello world text file <br>
+    1 file changed, 1 insertion(+) <br>
+    create mode 100644 HelloWorld.txt 
+  </div>
+</article>
+
+<p>The git output tells us that 1 file was changed (HelloWorld.txt) and 1 file was inserted (also HelloWorld.txt). It shows us the commit message used “Adding Hello world text file” along with the first 4 characters of the hash which it uses to identify and secure the commit.</p>
+<p>Lets update the file then add a new commit interactively. Open the text file, add the new line “goodbye world” and save.</p>
+<img src="/The-One-True-Version-Control/helloworld-add-text2.png" class="" title="goodbye world">
+
+<p>To see the change that that occurred in our HelloWorld.txt file, type in the following command:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git diff
+  </div>
+</article>
+
+<p>git will respond with the output: </p>
+<article class="message is-dark">
+  <div class="message-body">
+    diff --git a/HelloWorld.txt b/HelloWorld.txt <br>
+    index 95d09f2..cc8face 100644 <br>
+    --- a/HelloWorld.txt <br>
+    +++ b/HelloWorld.txt <br>
+    <span style="color:#4299e1">@@ -1 +1,2 @@</span> <br>
+    <span style="color:#f56565">-hello world</span> <br>
+    \ No newline at end of file <br>
+    <span style="color:#48bb78">+hello world</span> <br>
+    <span style="color:#48bb78">+goodbye world</span> <br>
+  </div>
+</article>
+
+<p>Lets Break this down, line by line:<br>Line 1 tells us that git has two versions of HelloWorld.txt, for current and commited changes.<br>Line 2 tells us the indexes of each file.<br>Line 3 and 4 tell us that a/HelloWorld.txt is being removed and +++ b/HelloWorld.txt is being inserted.<br>Line 5 indicates a unified diff hunk identifier. this is documented by GNU Diffutils <a href="http://www.gnu.org/software/diffutils/manual/diffutils.html#Detailed-Unified" title="" target="">here</a>.<br>Line 6 to 9 show what was removed and inserted into the file.</p>
+<p>To see what the file looked like before its current changed (what it looked like on the last commit) type the following:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git show 95d09f2
+  </div>
+</article>
+
+<p>git will respond with the output: </p>
+<article class="message is-dark">
+  <div class="message-body">
+    hello world
+  </div>
+</article>
+
+<p>Perfect, thats exactly how it looked before we added the new line. Lets add this change and make a new commit interactively with the following command:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git commit -a
+  </div>
+</article>
+
+<p>Your console should jump you into an interactive nano editor, where you can enter in your commit message, then hit ctrl+x on your keyboard to exit and save the commit:</p>
+<figure class="highlight bash"><figcaption><span>interactive commit</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Added goodbye world</span><br><span class="line"><span class="comment"># Please enter the commit message for your changes. Lines starting</span></span><br><span class="line"><span class="comment"># with '#' will be ignored, and an empty message aborts the commit.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># On branch master</span></span><br><span class="line"><span class="comment"># Your branch is ahead of 'origin/master' by 1 commit.</span></span><br><span class="line"><span class="comment">#   (use "git push" to publish your local commits)</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Changes to be committed:</span></span><br><span class="line"><span class="comment">#       modified:   HelloWorld.tx</span></span><br></pre></td></tr></table></figure>
+
+<p>Now, if we use the <strong>git log</strong> command, we can see all 3 commits. </p>
+<article class="message is-dark">
+  <div class="message-body">
+    <span style="color:#ecc94b">commit 43e4a93f98554068586d7df91db7b1a226446197</span> <br>
+    Author: MrDaubinet <daubinet.jordan@gmail.com> <br>
+    Date:   Mon Jun 22 13:59:22 2020 +0200 <br>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Added goodbye world  <br>
+    <br>
+    <span style="color:#ecc94b">commit 20be7fb5279332c2a6a3ddcd582621059fc92832</span> <br>
+    Author: MrDaubinet <daubinet.jordan@gmail.com> <br>
+    Date:   Mon Jun 22 12:40:49 2020 +0200 <br>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Adding Hello world text file <br>
+    <br>
+    <span style="color:#ecc94b">commit e9e9de444b8170087901a44e75335648f701c13b (origin/master, origin/HEAD)</span> <br>
+    Author: MrDaubinet <daubinet.jordan@gmail.com> <br>
+    Date:   Sun Jun 21 14:28:06 2020 +0200 <br>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;first commit 
+  </div>
+</article>
+
+<article class="message is-info">
+  <div class="message-body">
+    <b>Well Done!</b> <br> 
+    You've gained the ability to create commits and view your commit logs. You can now fully version control your code when working locally.  
+  </div>
+</article>
+
+<h1 id="Merging-Branches"><a href="#Merging-Branches" class="headerlink" title="Merging Branches"></a>Merging Branches</h1><p>Lets see how git manages collaboration between branches. We’re going to create a new branch, add a new file then merge these changes back into the master branch. We’re also going to take a look at what a merge conflict looks like, how it happens and how to deal with one.</p>
+<img src="/The-One-True-Version-Control/undraw_collaborators.svg" class="" title="git branches">
+
+<p>To start this off, we’re going to create and checkout a new branch with the following commands:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git branch add-another-file <br>
+    git checkout add-another-file
+  </div>
+</article>
+
+<p>Developers usually create new branches when they want to work on a new feature and merge the branch back into master when the feature is complete. Thus, it makes sense to name your branch something to do with the feature. In our case, we’re going to be adding a new file to the repository. Checking-out the new branch means we switch from developing on master, to developing on add-another-file.</p>
+<p>Type in the following command to list all your current branches:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git branch add-another-file
+  </div>
+</article>
+
+<p>Git will output the following:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    * <span style="color: #48bb78">add-another-file</span><br>
+    master
+  </div>
+</article>
+
+<p>We can see we have twp branches and the current active branch is represented with a “*”.</p>
+<p>Now lets add a new File, create a new file called PieceOfCake.txt.</p>
+<img src="/The-One-True-Version-Control/pieceofcake-add-file.png" class="" title="folder">
+
+<p>If you check <strong>git status</strong>, git would tell you that you have a new untracked file. </p>
+<p>Lets track and commit the file with the following commands:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git add . <br>
+    git commit -m "Added PieceOfCake.txt to the repository"
+  </div>
+</article>
+
+<p>Now that we’ve added the PieceOfCake.txt file on our “add-another-file” branch, lets go back to our master branch and merge in the changes from the “add-another-file” branch</p>
+<p>Checkout master with the following command:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git checkout master 
+  </div>
+</article>
+
+<article class="message is-warning">
+  <div class="message-body">
+    You may notice that git told us that we are ahead of the origin/master.  <br>
+    Don't worry, we're going to get to this in the next section.
+  </div>
+</article>
+
+<p>Merge the “add-another-file” branch into master with the following command:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git merge "add-another-file" 
+  </div>
+</article>
+
+<p>Git will output the following:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    Updating 43e4a93..7f70216 <br>
+    Fast-forward <br>
+    PieceOfCake.txt | 0 <br>
+    1 file changed, 0 insertions(+), 0 deletions(-) <br>
+    create mode 100644 PieceOfCake.txt <br>
+  </div>
+</article>
+
+<p>So, git tells us that it updated from commit 43e4a93 to commit 7f70216. Remember these are the unique hash values git assigns to each commit. Git also told us that this was a “Fast-forward” merge, meaning it had not merge conflicts and could simply append the commit from “add-another-file” branch, into the master branch. In this merge, 1 file was changed, 0 files were inserted and 0 files were deleted. If you type in the command <strong>git log</strong>, you can see the chain of commits on master now includes the commit we made on “add-another-file”.</p>
+<p>Lets now look at a scenario with a merge conflict. To create a merge conflict, we’re going to need to change the same file on two different branched and merge them together.</p>
+<p>Lets start by creating and checking out a new branch with the following commands:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git branch merge-conflict <br>
+    git checkout merge-conflict
+  </div>
+</article>
+
+<p>Git checkout creates a new branch based off of your current master branch, so the branch merge-conflict will have all the files that were in the master branch when it was created. </p>
+<p>lets update the PieceOfCake.txt file by adding a line of text and saving the file. </p>
+<img src="/The-One-True-Version-Control/pieceofcake-add-text.png" class="" title="folder">
+
+<p>Then track and commit the change with the following commands: </p>
+<article class="message is-dark">
+  <div class="message-body">
+    git add . <br>
+    git commit -m "Updated the text on PieceOfCake.txt"
+  </div>
+</article>
+
+<p>Now lets go back to our master branch with the command:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git add checkout master
+  </div>
+</article>
+
+<p>Now we update the PieceOfCake.txt file by adding a different line of text and saving the file.</p>
+<img src="/The-One-True-Version-Control/pieceofcake-add-text2.png" class="" title="folder">
+
+<p>Then track and commit the change with the following commands: </p>
+<article class="message is-dark">
+  <div class="message-body">
+    git add . <br>
+    git commit -m "Updated PieceOfCake.txt with different text"
+  </div>
+</article>
+
+<p>Lets try merge the branch “merge-conflict” into our master branch.</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git checkout master<br>
+    git merge "merge-conflict"
+  </div>
+</article>
+
+<p>Oh no! we got a merge conflict… just as expected.</p>
+<article class="message is-danger">
+  <div class="message-body">
+    Auto-merging PieceOfCake.txt <br>
+    CONFLICT (content): Merge conflict in PieceOfCake.txt <br>
+    Automatic merge failed; fix conflicts and then commit the result.
+  </div>
+</article>
+
+<p>If you open up the file, you’ll see that git has made some changes to it.</p>
+<img src="/The-One-True-Version-Control/merge-conflict.png" class="" title="merge conflict">
+
+<p>Git has split the code, where the merge conflict occurred. “&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD” to “=======”, indicates the section of the code which is currently on your working branch HEAD. By default, “HEAD” is a pointer to the latest commit in the currently active branch. So head is the latest commit on our master branch. “=======”  to “&gt;&gt;&gt;&gt;&gt;&gt;&gt; merge-conflict”, indicates the section of code which is currently on the branch you are trying to merge with. Git leaves it up to the developer to manually fix the file and select which parts of each branch they want in it. </p>
+<p>I updated my file to look like this:</p>
+<img src="/The-One-True-Version-Control/merge-conflict-fix.png" class="" title="merge conflict fix">
+
+<p>Now we can track this change and add it as a new commit:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git add . <br>
+    git commit -m "Fixed the merge conflict"
+  </div>
+</article>
+
+<article class="message is-info">
+  <div class="message-body">
+    <b>Great Job!</b> <br> 
+    And thats all there is too it, you now know how to create and fixed a merge conflicts. 
+  </div>
+</article>
+
+
+<!-- Fetching and checking out. --> 
+<!-- # Pushing Changes -->
+<h1 id="Pulling-and-Pushing-Changes"><a href="#Pulling-and-Pushing-Changes" class="headerlink" title="Pulling and Pushing Changes"></a>Pulling and Pushing Changes</h1><p>Every section which we’ve covered up until now has been to introduce the concepts needed to collaborate remotely with git. This last quick section will show  you how to push your changes onto the remote repository and pull changes from the remote repository. </p>
+<img src="/The-One-True-Version-Control/undraw_filing_system.svg" class="" title="pulling and pushing">
+
+<p>First lets look at how you push your changes to the remote repository with the following command:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git push
+  </div>
+</article>
+
+<p>Your remote repository should now be updated with the most recent version of your local repository. Next, we’re going to see how you would pull changes from the remote repository. For this example, I’m going to get my friend jason to clone the repository, make a new commit with some changes on his local master branch and then push the changes to the remote repository. </p>
+<p>After he’s done his changes, we use the following commands to pull them into our local master branch;</p>
+<article class="message is-dark">
+  <div class="message-body">
+    git pull
+  </div>
+</article>
+
+<p>Git will output the following:</p>
+<article class="message is-dark">
+  <div class="message-body">
+    Unpacking objects: 100% (3/3), done. <br>
+    From https://github.com/MrDaubinet/Version-Control-with-Git <br>
+      604088b..591ad08  master     -> origin/master <br>
+    Updating 604088b..591ad08 <br>
+    Fast-forward <br>
+    hello.txt | 1 <span style="color:#48bb78">+</span> <br>
+    1 file changed, 1 insertion(+) <br>
+    create mode 100644 hello.txt 
+  </div>
+</article>
+
+<p>In summary, our master was updated to the origin/master branch. Git pull runs an automatic merge command and we had a “Fast-forward” merge with no conflicts. Lastly, we can see that 1 file was changed and added, the hello.txt file.</p>
+<article class="message is-warning">
+  <div class="message-body">
+    You can run <b>git fetch</b> to fetch the most recent changes on the remote master branch without actually merging them. You would then need to run <b>git merge</b> if you want to integrate the changes into your master branch.
+  </div>
+</article>
+
+
+<!-- # **Additional Git Usage**
+## Rebasing a commit
+## Resetting the head
+## Untracking files
+## Config your Git config
+## Setting Upstream and Downstream remotes
+
+# Summary of Commands
+## Add
+## Commit
+## Merge
+## Push
+## Pull -->
+</div><div class="article-tags size-small mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/Version-Control/">Version Control</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/This-is-Me/"><span class="level-item">This is my world, and its all for me</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div class="content" id="valine-thread"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script><script>new Valine({
+            el: '#valine-thread' ,
+            appId: "gXLscjXiKCUdQihJPMIiCpeb-MdYXbMMI",
+            appKey: "QqD25W16DwgaXo3hPNQmPRbK",
+            placeholder: "Hello friend",
+            avatar: "robohash",
+            
+            meta: ["nick","mail","link"],
+            pageSize: 10,
+            lang: "en",
+            visitor: true,
+            highlight: true,
+            
+            
+            emojiCDN: "https://openmoji.org/data/color/svg/",
+            emojiMaps: {"grinning face with big eyes":"1F603.svg","grinning face with smiling eyes":"1F604.svg","grinning squinting face":"1F606.svg","grinning face with sweat":"1F605.svg","rolling on the floor laughing":"1F923.svg","face with tears of joy":"1F602.svg","slightly smiling face":"1F642.svg","upside-down face":"1F643.svg","winking face":"1F609.svg","smiling face with smiling eyes":"1F60A.svg","smiling face with halo":"1F607.svg","smiling face with hearts":"1F970.svg","smiling face with heart-eyes":"1F60D.svg","star-struck":"1F929.svg","hugging face":"1F917.svg","zipper-mouth face":"1F910.svg","sleeping face":"1F634.svg","exploding head":"1F92F.svg","cowboy hat face":"1F920.svg","partying face":"1F973.svg","disguised face":"1F978.svg","nerd face":"1F913.svg","thinking face":"1F914.svg","hushed face":"1F62F.svg","pile of poo":"1F4A9.svg","face with steam from nose":"1F624.svg","dizzy face":"1F635.svg","face with symbols on mouth":"1F92C.svg"},
+            
+            requiredFields: [],
+        });</script></div></div></div><!--!--><div class="column column-right is-4-tablet is-4-desktop is-4-widescreen  order-3 is-sticky"><div class="card widget"><div class="card-content"><h3 class="menu-label">Recent</h3><article class="media"><a class="media-left" href="/The-One-True-Version-Control/"><p class="image is-64x64"><img class="thumbnail" src="/img/warrior.svg" alt="The One True Version Control"></p></a><div class="media-content size-small"><p><time dateTime="2020-07-21T10:12:27.102Z">21-07-2020</time></p><p class="title is-6"><a class="link-muted" href="/The-One-True-Version-Control/">The One True Version Control</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Software-Engineering/">Software Engineering</a></p></div></article><article class="media"><a class="media-left" href="/This-is-Me/"><p class="image is-64x64"><img class="thumbnail" src="/img/vector_landscape_2.svg" alt="This is my world, and its all for me"></p></a><div class="media-content size-small"><p><time dateTime="2020-07-21T10:11:52.918Z">21-07-2020</time></p><p class="title is-6"><a class="link-muted" href="/This-is-Me/">This is my world, and its all for me</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Personal/">Personal</a></p></div></article></div></div><div class="card widget" id="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="is-flex" href="#The-Basics"><span class="mr-2">1</span><span>The Basics</span></a></li><li><a class="is-flex" href="#Starting-Out"><span class="mr-2">2</span><span>Starting Out</span></a></li><li><a class="is-flex" href="#Tracking-Changes"><span class="mr-2">3</span><span>Tracking Changes</span></a></li><li><a class="is-flex" href="#Committing-Changes"><span class="mr-2">4</span><span>Committing Changes</span></a></li><li><a class="is-flex" href="#Merging-Branches"><span class="mr-2">5</span><span>Merging Branches</span></a></li><li><a class="is-flex" href="#Pulling-and-Pushing-Changes"><span class="mr-2">6</span><span>Pulling and Pushing Changes</span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile is-mobile" href="https://git-scm.com/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Git</span></span><span class="level-right"><span class="level-item tag">git-scm.com</span></span></a></li></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/Bmo.png" alt="Jordan Daubinet" height="28"></a><p class="size-small"><span>&copy; 2020 Jordan Daubinet</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">Visited by <span id="busuanzi_value_site_uv">0</span> users</span></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/MrDaubinet"><i class="fab fa-github"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Vecteezy" href="https://www.vecteezy.com/free-vector/vector-landscape"><i class="fas fa-camera"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            site: {
+                url: 'http://https://mrdaubinet.github.io',
+                external_link: {"enable":true,"exclude":[]}
+            },
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to Top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

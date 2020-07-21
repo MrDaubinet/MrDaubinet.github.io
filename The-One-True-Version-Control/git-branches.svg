@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="673.846" height="229.851" viewBox="0 0 673.846 229.851">
+  <g id="Group_2" data-name="Group 2" transform="translate(-687 117)">
+    <line id="Line_1" data-name="Line 1" x2="625.06" transform="translate(722.156 40.961)" fill="none" stroke="#3f3d56" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_21" data-name="Path 21" d="M466.46,393.83s29.89,4.15,14.41-27.92,42-26,42-26" transform="translate(311.226 -352.879)" fill="none" stroke="#3f3d56" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_22" data-name="Path 22" d="M665.53,393.83s29.89-4.14,14.41,27.93,42,26,42,26" transform="translate(311.226 -352.879)" fill="none" stroke="#3f3d56" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_23" data-name="Path 23" d="M952.16,393.83s-29.9-4.14-14.41,27.93-42,26-42,26" transform="translate(311.226 -352.879)" fill="none" stroke="#3f3d56" stroke-miterlimit="10" stroke-width="3"/>
+    <line id="Line_3" data-name="Line 3" y2="121" transform="translate(722.5 -79.5)" fill="none" stroke="#38b2ac" stroke-width="1" stroke-dasharray="7 15"/>
+    <line id="Line_2" data-name="Line 2" x1="164.93" transform="translate(1042.046 94.871)" fill="none" stroke="#3f3d56" stroke-miterlimit="10" stroke-width="3"/>
+    <circle id="Ellipse_5" data-name="Ellipse 5" cx="18.25" cy="18.25" r="18.25" transform="translate(703.906 22.711)" fill="#38b2ac"/>
+    <path id="Ellipse_6" data-name="Ellipse 6" d="M18.25,0A18.25,18.25,0,1,1,0,18.25,18.25,18.25,0,0,1,18.25,0Z" transform="translate(816.156 -31.479)" fill="#ecc94b"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="18.25" cy="18.25" r="18.25" transform="translate(816.156 22.711)" fill="#38b2ac"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="18.25" cy="18.25" r="18.25" transform="translate(888.596 22.711)" fill="#38b2ac"/>
+    <circle id="Ellipse_9" data-name="Ellipse 9" cx="18.25" cy="18.25" r="18.25" transform="translate(1015.216 76.351)" fill="#f56565"/>
+    <circle id="Ellipse_10" data-name="Ellipse 10" cx="18.25" cy="18.25" r="18.25" transform="translate(1110.896 76.351)" fill="#f56565"/>
+    <circle id="Ellipse_11" data-name="Ellipse 11" cx="18.25" cy="18.25" r="18.25" transform="translate(1105.906 22.711)" fill="#38b2ac"/>
+    <circle id="Ellipse_12" data-name="Ellipse 12" cx="18.25" cy="18.25" r="18.25" transform="translate(1324.346 22.711)" fill="#38b2ac"/>
+    <circle id="Ellipse_13" data-name="Ellipse 13" cx="18.25" cy="18.25" r="18.25" transform="translate(1234.986 22.711)" fill="#38b2ac"/>
+    <text id="Me" transform="translate(708 -95)" fill="#707070" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Me</tspan></text>
+    <text id="You" transform="translate(818 -95)" fill="#707070" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">You</tspan></text>
+    <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(687 -117)" fill="none">
+      <path d="M15,0H55a15,15,0,0,1,0,30H15A15,15,0,0,1,15,0Z" stroke="none"/>
+      <path d="M 15 1 C 11.26047134399414 1 7.744758605957031 2.456249237060547 5.100509643554688 5.100509643554688 C 2.456253051757813 7.744760513305664 1 11.26046943664551 1 15 C 1 18.73952865600586 2.456253051757813 22.25523948669434 5.100509643554688 24.89949035644531 C 7.744758605957031 27.54375076293945 11.26047134399414 29 15 29 L 55 29 C 58.73952865600586 29 62.25524139404297 27.54375076293945 64.89949035644531 24.89949035644531 C 67.54374694824219 22.25523948669434 69 18.73952865600586 69 15 C 69 11.26046943664551 67.54374694824219 7.744760513305664 64.89949035644531 5.100509643554688 C 62.25524139404297 2.456249237060547 58.73952865600586 1 55 1 L 15 1 M 15 0 L 55 0 C 63.28427124023438 0 70 6.715730667114258 70 15 C 70 23.28426933288574 63.28427124023438 30 55 30 L 15 30 C 6.715728759765625 30 0 23.28426933288574 0 15 C 0 6.715730667114258 6.715728759765625 0 15 0 Z" stroke="none" fill="#38b2ac"/>
+    </g>
+    <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(799 -117)" fill="none">
+      <path d="M15,0H55a15,15,0,0,1,0,30H15A15,15,0,0,1,15,0Z" stroke="none"/>
+      <path d="M 15 1 C 11.26047134399414 1 7.744758605957031 2.456249237060547 5.100509643554688 5.100509643554688 C 2.456253051757813 7.744760513305664 1 11.26046943664551 1 15 C 1 18.73952865600586 2.456253051757813 22.25523948669434 5.100509643554688 24.89949035644531 C 7.744758605957031 27.54375076293945 11.26047134399414 29 15 29 L 55 29 C 58.73952865600586 29 62.25524139404297 27.54375076293945 64.89949035644531 24.89949035644531 C 67.54374694824219 22.25523948669434 69 18.73952865600586 69 15 C 69 11.26046943664551 67.54374694824219 7.744760513305664 64.89949035644531 5.100509643554688 C 62.25524139404297 2.456249237060547 58.73952865600586 1 55 1 L 15 1 M 15 0 L 55 0 C 63.28427124023438 0 70 6.715730667114258 70 15 C 70 23.28426933288574 63.28427124023438 30 55 30 L 15 30 C 6.715728759765625 30 0 23.28426933288574 0 15 C 0 6.715730667114258 6.715728759765625 0 15 0 Z" stroke="none" fill="#ecc94b"/>
+    </g>
+    <path id="Line_4" data-name="Line 4" d="M0,0V44" transform="translate(834.5 -81.5)" fill="none" stroke="#f6e05e" stroke-width="1" stroke-dasharray="7 15"/>
+    <path id="Path_25" data-name="Path 25" d="M1,0-.18,174.427" transform="translate(1033.5 -101.5)" fill="none" stroke="#f56565" stroke-width="1" stroke-dasharray="7 15"/>
+    <g id="Group_1" data-name="Group 1" transform="translate(-1 -1)">
+      <g id="Rectangle_7" data-name="Rectangle 7" transform="translate(966 -116)" fill="#fff" stroke="#f56565" stroke-width="1">
+        <rect width="140" height="30" rx="15" stroke="none"/>
+        <rect x="0.5" y="0.5" width="139" height="29" rx="14.5" fill="none"/>
+      </g>
+      <text id="Your_Friend" data-name="Your Friend" transform="translate(989 -93)" fill="#707070" font-size="19" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Your Friend</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Jordan Daubinet</title>
+    <link>http://https://mrdaubinet.github.io/</link>
+    
+    <image>
+      <url>http://https//mrdaubinet.github.io/img/jake-the-dog.svg</url>
+      <title>Jordan Daubinet</title>
+      <link>http://https://mrdaubinet.github.io/</link>
+    </image>
+    
+    <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>A blog covering my personal experience with software engineering and artificial intelligence</description>
+    <pubDate>Tue, 21 Jul 2020 10:14:52 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>The One True Version Control</title>
+      <link>http://https//mrdaubinet.github.io/The-One-True-Version-Control/</link>
+      <guid>http://https//mrdaubinet.github.io/The-One-True-Version-Control/</guid>
+      <pubDate>Tue, 21 Jul 2020 10:12:27 GMT</pubDate>
+      <description>
+      
+        In a world of web applications, collaboration and code management...
+      
+      </description>
+      
+      
+      <comments>http://https//mrdaubinet.github.io/The-One-True-Version-Control/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>This is my world, and its all for me</title>
+      <link>http://https//mrdaubinet.github.io/This-is-Me/</link>
+      <guid>http://https//mrdaubinet.github.io/This-is-Me/</guid>
+      <pubDate>Tue, 21 Jul 2020 10:11:52 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;I created this blog so that I can track the things I do and the things I learn.
+      
+      </description>
+      
+      
+      <comments>http://https//mrdaubinet.github.io/This-is-Me/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>

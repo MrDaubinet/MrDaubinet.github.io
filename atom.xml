@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Jordan Daubinet</title>
+  <icon>http://https//mrdaubinet.github.io/img/jake-the-dog.svg</icon>
+  <subtitle>Software Engineering and Artificial Intelligence</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://https//mrdaubinet.github.io/"/>
+  <updated>2020-07-21T10:14:52.660Z</updated>
+  <id>http://https//mrdaubinet.github.io/</id>
+  
+  <author>
+    <name>Jordan Daubinet</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>The One True Version Control</title>
+    <link href="http://https//mrdaubinet.github.io/The-One-True-Version-Control/"/>
+    <id>http://https//mrdaubinet.github.io/The-One-True-Version-Control/</id>
+    <published>2020-07-21T10:12:27.102Z</published>
+    <updated>2020-07-21T10:14:52.660Z</updated>
+    
+    <summary type="html">
+    
+      In a world of web applications, collaboration and code management...
+    
+    </summary>
+    
+    
+      <category term="Software Engineering" scheme="http://https://mrdaubinet.github.io/categories/Software-Engineering/"/>
+    
+    
+      <category term="Version Control" scheme="http://https://mrdaubinet.github.io/tags/Version-Control/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>This is my world, and its all for me</title>
+    <link href="http://https//mrdaubinet.github.io/This-is-Me/"/>
+    <id>http://https//mrdaubinet.github.io/This-is-Me/</id>
+    <published>2020-07-21T10:11:52.918Z</published>
+    <updated>2020-07-21T10:13:31.003Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I created this blog so that I can track the things I do and the things I learn.
+    
+    </summary>
+    
+    
+      <category term="Personal" scheme="http://https://mrdaubinet.github.io/categories/Personal/"/>
+    
+    
+      <category term="Informative" scheme="http://https://mrdaubinet.github.io/tags/Informative/"/>
+    
+  </entry>
+  
+</feed>
