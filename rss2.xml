@@ -4,12 +4,12 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Jordan Daubinet</title>
-    <link>http://https://mrdaubinet.github.io/</link>
+    <link>https://mrdaubinet.github.io/</link>
     
     <image>
-      <url>https://mrdaubinet.github.io/img/jake-the-dog.svg</url>
+      <url>https://mrdaubinet.github.io/img/jake-the-dog-small.png</url>
       <title>Jordan Daubinet</title>
-      <link>http://https://mrdaubinet.github.io/</link>
+      <link>https://mrdaubinet.github.io/</link>
     </image>
     
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
@@ -20,8 +20,8 @@
     
     <item>
       <title>The One True Version Control</title>
-      <link>http://https//mrdaubinet.github.io/The-One-True-Version-Control/</link>
-      <guid>http://https//mrdaubinet.github.io/The-One-True-Version-Control/</guid>
+      <link>https://mrdaubinet.github.io/The-One-True-Version-Control/</link>
+      <guid>https://mrdaubinet.github.io/The-One-True-Version-Control/</guid>
       <pubDate>Tue, 21 Jul 2020 10:12:27 GMT</pubDate>
       <description>
       
@@ -30,13 +30,13 @@
       </description>
       
       
-      <comments>http://https//mrdaubinet.github.io/The-One-True-Version-Control/#disqus_thread</comments>
+      <comments>https://mrdaubinet.github.io/The-One-True-Version-Control/#disqus_thread</comments>
     </item>
     
     <item>
       <title>This is my world, and its all for me</title>
-      <link>http://https//mrdaubinet.github.io/This-is-Me/</link>
-      <guid>http://https//mrdaubinet.github.io/This-is-Me/</guid>
+      <link>https://mrdaubinet.github.io/This-is-Me/</link>
+      <guid>https://mrdaubinet.github.io/This-is-Me/</guid>
       <pubDate>Tue, 21 Jul 2020 10:11:52 GMT</pubDate>
       <description>
       
@@ -45,7 +45,7 @@
       </description>
       
       
-      <comments>http://https//mrdaubinet.github.io/This-is-Me/#disqus_thread</comments>
+      <comments>https://mrdaubinet.github.io/This-is-Me/#disqus_thread</comments>
     </item>
     
   </channel>
